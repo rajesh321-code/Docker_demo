@@ -1,0 +1,3 @@
+# requirements.txt
+# (empty or example dependency)
+requests
