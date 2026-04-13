@@ -3,15 +3,15 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo Logging in to Amazon ECR (optional)
+      - echo "Logging in to Amazon ECR (optional)"
 
   build:
     commands:
-      - echo Building Docker image...
+      - echo "Building Docker image..."
       - docker build -t myapp .
-      - echo Running container...
+      - echo "Running container..."
       - docker run myapp
 
   post_build:
     commands:
-      - echo Build completed
+      - echo "Build completed"
